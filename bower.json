@@ -1,0 +1,16 @@
+{
+  "name": "ng2-login-customized",
+  "description": "Login in ANgular 2 with customization options.",
+  "main": "index.js",
+  "authors": [
+    "Jesús Juan Aguilar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ng2"
+  ],
+  "homepage": "https://github.com/sukisuso/ng2-login-customized",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

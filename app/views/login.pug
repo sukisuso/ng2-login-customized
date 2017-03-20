@@ -1,0 +1,9 @@
+router-outlet
+  .login
+    h1 Login
+    form(method='post')
+      input(type='text', name='u', placeholder='Username', required='required')
+      input(type='password', name='p', placeholder='Password', required='required')
+      button.btn.btn-primary.btn-block.btn-large(type='button', (click)="loginAction()") Let me in.
+      p ¿Aún no eres usuario?
+        a(href="#" routerLink="/signup") Crear nueva cuenta
