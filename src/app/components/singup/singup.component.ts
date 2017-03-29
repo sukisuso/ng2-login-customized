@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'signup',
-  templateUrl: '../../templates/signup/signup.html',
+  templateUrl: '../../../templates/signup/signup.html',
 })
 
 export class SignupComponent {
@@ -14,8 +14,10 @@ export class SignupComponent {
     constructor(private router: Router) {
     }
 
+    goBack() {
+        this.router.navigate(['home']);
+    }
 
-    createNewUser() {
-        this.errorInLogin = false;
+    createNewAccount() {
     }
 } 

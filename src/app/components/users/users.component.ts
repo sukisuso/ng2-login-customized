@@ -3,14 +3,12 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'login',
-  templateUrl: '../../templates/login.html',
+  templateUrl: '../../../templates/users/users.html',
 })
-export class LoginComponent {
+
+export class UsersComponent {
   constructor( public router: Router) {
 
   }
-  
-  loginAction() {
-    this.router.navigate(['signup']);
-  }
+
 }

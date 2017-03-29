@@ -30,6 +30,7 @@ build/Release
 node_modules
 jspm_packages
 src/components
+src/templates/
 public/components
 
 # Optional npm cache directory

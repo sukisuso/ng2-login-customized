@@ -1,1 +1,40 @@
-p SignUpplease!!
+.container
+  .login-area
+    .panel.panel-default
+      .panel-header
+        p Create a new account
+      .panel-body
+        .row
+          .col-xs-12
+            .row
+              .col-xs-4
+                .form-group
+                  label(for="email") Email address
+                  input(type="email" class="form-control" id="email" placeholder="Enter email")
+              .col-xs-4
+                .form-group
+                  label(for="username") User name
+                  input(type="text" class="form-control" id="username" placeholder="Enter username")
+              .col-xs-4
+                .form-group
+                  label(for="name") Name and Surnames
+                  input(type="text" class="form-control" id="name" placeholder="Enter name and surnames")
+            .row
+              .col-xs-4
+                .form-group
+                  label(for="password") Password
+                  input(type="password" class="form-control" id="password" placeholder="Enter password")
+              .col-xs-4
+                .form-group
+                  label(for="password2") Repeat password
+                  input(type="password" class="form-control" id="password" placeholder="Repeat password")
+              .col-xs-4
+                .form-group
+                  label(for="phone") Phone number
+                  input(type="text" class="form-control" id="phone"  placeholder="Enter phone number")
+
+            .row.buttons
+              .col-xs-3.col-xs-offset-3
+                button.btn.btn-primary.btn-block.btn-large(type='button', (click)="goBack()") Go back
+              .col-xs-3
+                button.btn.btn-primary.btn-block.btn-large(type='button', (click)="createNewAccount()") Create Account

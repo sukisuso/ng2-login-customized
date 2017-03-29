@@ -10,7 +10,7 @@
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
-    "develop": "gulp pug && concurrently --kill-others \"gulp watch\""
+    "develop": "gulp pug && gulp less && concurrently --kill-others \"gulp watch\""
   },
   "private": true,
   "dependencies": {
@@ -25,7 +25,11 @@
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2"
+    "zone.js": "^0.7.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-pug": "^3.3.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",
@@ -34,9 +38,6 @@
     "angular-cli": "1.0.0-beta.28.3",
     "codelyzer": "~2.0.0-beta.1",
     "concurrently": "^3.4.0",
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0",
-    "gulp-pug": "^3.3.0",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.5.0",
     "karma": "1.2.0",

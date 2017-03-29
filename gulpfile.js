@@ -2,9 +2,11 @@ const pug = require('gulp-pug');
 const path = require('path');
 const gulp = require('gulp');
 const less = require('gulp-less');
+const concat = require('gulp-concat');
 
 const paths = {
   pug: ['./app/views/**/*.pug'],
+  less: ['./app/views/less/**/*.less'],
 };
 
 gulp.task('default', ['pug']);
@@ -20,9 +22,11 @@ gulp.task('less', function () {
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
+    .pipe(concat('main.css'))
     .pipe(gulp.dest('./src/templates/css/'));
 });
 
 gulp.task('watch', function() {  
   gulp.watch(paths.pug, ['pug']);
+  gulp.watch(paths.less, ['less']);
 });
